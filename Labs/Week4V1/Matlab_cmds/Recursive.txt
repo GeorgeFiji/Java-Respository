@@ -1,0 +1,16 @@
+% Data from the Java program for recursive Fibonacci
+n_values = [5, 10, 15, 20, 30, 40];
+timesRec = [4900, 10300, 138800, 678500, 4284100, 424607100];
+
+% Create a figure and plot the data
+figure;
+
+% Plot recursive Fibonacci time
+plot(n_values, timesRec, '-o', 'LineWidth', 2);
+xlabel('n');
+ylabel('Time (ns)');
+title('Recursive Fibonacci Algorithm Performance');
+grid on;
+
+% Optionally, use a logarithmic scale for better visualization if needed
+set(gca, 'YScale', 'log');
